@@ -25,7 +25,9 @@
 .sheet-Starfarers,
 .sheet-Hive,
 .sheet-Tyrants,
-.sheet-Uplifted
+.sheet-Uplifted,
+.sheet-Custom
+
 {
     display: none;
 }
@@ -109,6 +111,7 @@ input[type="radio"][value="f8"]:checked ~  .sheet-Starfarers,
 input[type="radio"][value="f9"]:checked ~  .sheet-Hive,
 input[type="radio"][value="f10"]:checked ~ .sheet-Tyrants,
 input[type="radio"][value="f11"]:checked ~ .sheet-Uplifted,
+input[type="radio"][value="f99"]:checked ~ .sheet-Custom,
 
 input[type="checkbox"][value="f0"]:checked ~ .sheet-fNull,
 input[type="checkbox"][value="f1"]:checked ~ .sheet-Cultivators,
@@ -122,6 +125,7 @@ input[type="checkbox"][value="f8"]:checked ~  .sheet-Starfarers,
 input[type="checkbox"][value="f9"]:checked ~  .sheet-Hive,
 input[type="checkbox"][value="f10"]:checked ~ .sheet-Tyrants,
 input[type="checkbox"][value="f11"]:checked ~ .sheet-Uplifted,
+input[type="checkbox"][value="f99"]:checked ~ .sheet-Custom,
 
 input[type="radio"][value="family"]:checked ~ .sheet-Family,
 input[type="radio"][value="character"]:checked ~ .sheet-Character
@@ -491,6 +495,10 @@ input[type="checkbox"]:checked + .sheet-toggle-label::after {
 
 .sheet-inhertance-col:last-of-type {
   padding-left: 1rem;
+}
+
+.sheet-startLandmarks input, .sheet-startTraditions input, .sheet-startStats input {
+  background-color:lightgray;
 }
 
 /* End Sheet General Family Layout */
